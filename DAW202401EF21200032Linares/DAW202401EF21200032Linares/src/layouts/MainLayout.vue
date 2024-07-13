@@ -36,6 +36,17 @@
           :key="link.title"
           v-bind="link"
         />
+        <q-item-label header>Menu</q-item-label>
+
+        <q-item to="/products" class="text-red">
+          <q-item-section avatar>
+            <q-icon name="store" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Productos</q-item-label>
+          </q-item-section>
+        </q-item>
+        
       </q-list>
     </q-drawer>
 

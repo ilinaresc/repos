@@ -116,9 +116,9 @@ export default {
             timeout: 5000,
           });*/
           localStorage.setItem("userData", JSON.stringify(response.data));
-          //this.$router.push("/products");
+          this.$router.push("/products");
           //this.$router.push("/publicarActividades");
-          this.$router.push("/welcome");
+          this.$router.push("/welcome")
         })
         .catch((error) => {
           console.log(JSON.stringify(error));
